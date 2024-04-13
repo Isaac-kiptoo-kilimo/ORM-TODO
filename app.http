@@ -1,0 +1,41 @@
+### Health Check
+GET http://localhost:8000/health
+
+### get todos
+GET http://localhost:8000/api/v1/todo/todos
+
+
+### create todos
+POST http://localhost:8000/api/v1/todo/todos
+Content-Type: application/json
+
+{
+    "task": "Finish report",
+    "project": "Work"
+}
+
+### get single todo
+GET http://localhost:8000/api/v1/todo/todos/single/1
+
+
+### update todos
+PUT http://localhost:8000/api/v1/todo/todos/update/1
+Content-Type: application/json
+
+{
+    "task": "Buy Beans",
+    "project": "Kitchen"
+}
+
+### update complete todo
+PATCH http://localhost:8000/api/v1/todo/todos/patch/2
+Content-Type: application/json
+
+{
+    
+}
+
+
+### delete single todo
+DELETE http://localhost:8000/api/v1/todo/todos/delete/2
+

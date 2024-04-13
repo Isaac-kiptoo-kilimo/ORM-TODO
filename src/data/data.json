@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "task": "Buy groceries",
+      "project": "Home",
+      "complete": false
+    },
+    {
+      "id": 2,
+      "task": "Finish report",
+      "project": "Work",
+      "complete": false
+    },
+    {
+      "id": 3,
+      "task": "Go for a run",
+      "project": "Health",
+      "complete": true
+    },
+    {
+      "id": 4,
+      "task": "Read a book",
+      "project": "Personal",
+      "complete": false
+    },
+    {
+      "id": 5,
+      "task": "Call Mom",
+      "project": "Family",
+      "complete": false
+    },
+    {
+      "id": 6,
+      "task": "Clean the house",
+      "project": "Home",
+      "complete": true
+    },
+    {
+      "id": 7,
+      "task": "Prepare presentation",
+      "project": "Work",
+      "complete": false
+    },
+    {
+      "id": 8,
+      "task": "Pay bills",
+      "project": "Finances",
+      "complete": true
+    },
+    {
+      "id": 9,
+      "task": "Practice guitar",
+      "project": "Hobby",
+      "complete": false
+    },
+    {
+      "id": 10,
+      "task": "Schedule dentist appointment",
+      "project": "Health",
+      "complete": false
+    }
+  ]
+  
