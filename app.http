@@ -1,6 +1,48 @@
 ### Health Check
 GET http://localhost:8000/health
 
+### get users
+GET http://localhost:8000/api/v1/user/users
+
+### create users
+POST http://localhost:8000/api/v1/user/users
+Content-Type: application/json
+
+{
+    "fullName": "Kennedy Mwangi",
+    "email": "kennedymwangi@gmail.com",
+    "age": 28
+}
+
+
+### get single user
+GET http://localhost:8000/api/v1/user/users/single/1
+
+
+### update users
+PUT http://localhost:8000/api/v1/user/users/update/1
+Content-Type: application/json
+
+{
+    "fullName": "isaac kiptoo",
+    "age": 22
+}
+
+### update employed user
+PATCH http://localhost:8000/api/v1/user/users/patch/1
+Content-Type: application/json
+
+{
+    
+}
+
+
+### delete single user
+DELETE http://localhost:8000/api/v1/user/users/delete/3
+
+
+
+###*********************************************************Todos Endpoints*****************************###
 ### get todos
 GET http://localhost:8000/api/v1/todo/todos
 
@@ -10,16 +52,16 @@ POST http://localhost:8000/api/v1/todo/todos
 Content-Type: application/json
 
 {
-    "task": "Finish report",
-    "project": "Work"
+    "task": "Read book",
+    "project": "personal"
 }
 
 ### get single todo
-GET http://localhost:8000/api/v1/todo/todos/single/1
+GET http://localhost:8000/api/v1/todo/todos/single/3
 
 
 ### update todos
-PUT http://localhost:8000/api/v1/todo/todos/update/1
+PUT http://localhost:8000/api/v1/todo/todos/update/3
 Content-Type: application/json
 
 {
@@ -28,7 +70,7 @@ Content-Type: application/json
 }
 
 ### update complete todo
-PATCH http://localhost:8000/api/v1/todo/todos/patch/2
+PATCH http://localhost:8000/api/v1/todo/todos/patch/1
 Content-Type: application/json
 
 {
@@ -37,5 +79,5 @@ Content-Type: application/json
 
 
 ### delete single todo
-DELETE http://localhost:8000/api/v1/todo/todos/delete/2
+DELETE http://localhost:8000/api/v1/todo/todos/delete/3
 

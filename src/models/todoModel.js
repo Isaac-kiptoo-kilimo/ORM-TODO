@@ -2,23 +2,27 @@ import {sequelize} from '../config/db.js';
 import { DataTypes } from 'sequelize';
 
 const Todo=sequelize.define("todo",{
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+      },
     task:{
         type: DataTypes.STRING,
-        allowNull: false,
-        primaryKey: true
-    },
+        allowNull: false
+        },
     project:{
         type: DataTypes.STRING,
         allowNull: false
     },
     complete:{
         type: DataTypes.BOOLEAN,
-        defaultValue: true
+        defaultValue: false
     }
 })
 
-Todo.sync().then(()=>{
-    console.log(`The model ${Todo} has synced`);
+Todo.sync({ alter: true }).then(()=>{
+    console.log(`The model has synced`);
 })
 
 export default Todo;

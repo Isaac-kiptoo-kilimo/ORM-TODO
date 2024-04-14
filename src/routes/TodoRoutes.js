@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import { createTodoController, getAllTodosController, getSingleTodoController, removeTodoController, updateCompleteController, updateTodoController } from '../controllers/TodoControllers.js';
+import { createTodoController, getAllTodosController, getSingleTodoController, removeTodoController, updateCompleteController, updateTodoController } from '../controllers/todoControllers.js';
 const todosRouter=Router();
 
 todosRouter.get('/todos',getAllTodosController);
